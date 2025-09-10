@@ -80,7 +80,7 @@ while True:
             pyautogui.scroll(-scrollSpeed * scrollSensitivity)
             cv2.putText(img, "Open Hand (Scroll Down)", (50, 50), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 255), 2)
 
-        elif fingers[4] == 1 and fingers[0] == 1 and fingers[1] == 0 and fingers[2] == 0 and fingers[3] == 0:
+        elif fingers[1] == 1 and fingers[4] == 1 and fingers[0] == 0 and fingers[2] == 0 and fingers[3] == 0:
 
             pyautogui.scroll(scrollSpeed * scrollSensitivity)
             cv2.putText(img, "Thumb Up (Scroll Up)", (50, 50), cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 0), 2)
